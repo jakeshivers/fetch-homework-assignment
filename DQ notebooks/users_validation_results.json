@@ -1,0 +1,263 @@
+[
+    {
+        "success": false,
+        "expectation_config": {
+            "type": "expect_column_to_exist",
+            "kwargs": {
+                "batch_id": "pandas-users_asset",
+                "column": "user_id"
+            },
+            "meta": {}
+        },
+        "result": {},
+        "meta": {},
+        "exception_info": {
+            "raised_exception": false,
+            "exception_traceback": null,
+            "exception_message": null
+        }
+    },
+    {
+        "success": false,
+        "expectation_config": {
+            "type": "expect_column_values_to_be_unique",
+            "kwargs": {
+                "column": "user_id",
+                "batch_id": "pandas-users_asset"
+            },
+            "meta": {}
+        },
+        "result": {},
+        "meta": {},
+        "exception_info": {
+            "('column_values.unique.condition', 'fadd6c6e2159e09e3e58fd52d105c50a', ())": {
+                "exception_traceback": "Traceback (most recent call last):\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 533, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\expectations\\metrics\\map_metric_provider\\column_condition_partial.py\", line 92, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\expectations\\metrics\\util.py\", line 719, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\expectations\\metrics\\util.py\", line 789, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\expectations\\metrics\\util.py\", line 874, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"user_id\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 276, in _resolve\n    self._execution_engine.resolve_metrics(\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 279, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 538, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"user_id\" in BatchData does not exist.\n",
+                "exception_message": "Error: The column \"user_id\" in BatchData does not exist.",
+                "raised_exception": true
+            },
+            "('column_values.nonnull.condition', 'fadd6c6e2159e09e3e58fd52d105c50a', ())": {
+                "exception_traceback": "Traceback (most recent call last):\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 533, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\expectations\\metrics\\map_metric_provider\\column_condition_partial.py\", line 92, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\expectations\\metrics\\util.py\", line 719, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\expectations\\metrics\\util.py\", line 789, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\expectations\\metrics\\util.py\", line 874, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"user_id\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 276, in _resolve\n    self._execution_engine.resolve_metrics(\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 279, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 538, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"user_id\" in BatchData does not exist.\n",
+                "exception_message": "Error: The column \"user_id\" in BatchData does not exist.",
+                "raised_exception": true
+            }
+        }
+    },
+    {
+        "success": true,
+        "expectation_config": {
+            "type": "expect_column_values_to_not_be_null",
+            "kwargs": {
+                "batch_id": "pandas-users_asset",
+                "column": "createdDate"
+            },
+            "meta": {}
+        },
+        "result": {
+            "element_count": 495,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_counts": [],
+            "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+            "raised_exception": false,
+            "exception_traceback": null,
+            "exception_message": null
+        }
+    },
+    {
+        "success": false,
+        "expectation_config": {
+            "type": "expect_column_values_to_match_strftime_format",
+            "kwargs": {
+                "column": "createdDate",
+                "strftime_format": "%Y-%m-%dT%H:%M:%S.%fZ",
+                "batch_id": "pandas-users_asset"
+            },
+            "meta": {}
+        },
+        "result": {},
+        "meta": {},
+        "exception_info": {
+            "('column_values.match_strftime_format.condition', '59f9dc25b034afc43b99cc4fabb66095', 'strftime_format=%Y-%m-%dT%H:%M:%S.%fZ')": {
+                "exception_traceback": "Traceback (most recent call last):\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\expectations\\metrics\\column_map_metrics\\column_values_match_strftime_format.py\", line 25, in is_parseable_by_format\n    datetime.strptime(val, strftime_format)  # noqa: DTZ007\nTypeError: strptime() argument 1 must be str, not dict\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 533, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\expectations\\metrics\\map_metric_provider\\column_condition_partial.py\", line 113, in inner_func\n    meets_expectation_series = metric_fn(\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\expectations\\metrics\\column_map_metrics\\column_values_match_strftime_format.py\", line 34, in _pandas\n    return column.map(is_parseable_by_format)\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\pandas\\core\\series.py\", line 4540, in map\n    new_values = self._map_values(arg, na_action=na_action)\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\pandas\\core\\base.py\", line 921, in _map_values\n    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\pandas\\core\\algorithms.py\", line 1812, in map_array\n    return lib.map_infer(values, mapper, convert=convert)\n  File \"lib.pyx\", line 2917, in pandas._libs.lib.map_infer\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\expectations\\metrics\\column_map_metrics\\column_values_match_strftime_format.py\", line 28, in is_parseable_by_format\n    raise TypeError(  # noqa: TRY003\nTypeError: Values passed to expect_column_values_to_match_strftime_format must be of type string.\nIf you want to validate a column of dates or timestamps, please call the expectation before converting from string format.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 276, in _resolve\n    self._execution_engine.resolve_metrics(\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 279, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n  File \"c:\\Users\\Shivers\\anaconda3\\envs\\etl\\lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 538, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Values passed to expect_column_values_to_match_strftime_format must be of type string.\nIf you want to validate a column of dates or timestamps, please call the expectation before converting from string format.\n",
+                "exception_message": "Values passed to expect_column_values_to_match_strftime_format must be of type string.\nIf you want to validate a column of dates or timestamps, please call the expectation before converting from string format.",
+                "raised_exception": true
+            }
+        }
+    },
+    {
+        "success": true,
+        "expectation_config": {
+            "type": "expect_column_to_exist",
+            "kwargs": {
+                "batch_id": "pandas-users_asset",
+                "column": "state"
+            },
+            "meta": {}
+        },
+        "result": {},
+        "meta": {},
+        "exception_info": {
+            "raised_exception": false,
+            "exception_traceback": null,
+            "exception_message": null
+        }
+    },
+    {
+        "success": true,
+        "expectation_config": {
+            "type": "expect_column_values_to_be_in_set",
+            "kwargs": {
+                "batch_id": "pandas-users_asset",
+                "column": "state",
+                "value_set": [
+                    "AL",
+                    "AK",
+                    "AZ",
+                    "AR",
+                    "CA",
+                    "CO",
+                    "CT",
+                    "DE",
+                    "FL",
+                    "GA",
+                    "HI",
+                    "ID",
+                    "IL",
+                    "IN",
+                    "IA",
+                    "KS",
+                    "KY",
+                    "LA",
+                    "ME",
+                    "MD",
+                    "MA",
+                    "MI",
+                    "MN",
+                    "MS",
+                    "MO",
+                    "MT",
+                    "NE",
+                    "NV",
+                    "NH",
+                    "NJ",
+                    "NM",
+                    "NY",
+                    "NC",
+                    "ND",
+                    "OH",
+                    "OK",
+                    "OR",
+                    "PA",
+                    "RI",
+                    "SC",
+                    "SD",
+                    "TN",
+                    "TX",
+                    "UT",
+                    "VT",
+                    "VA",
+                    "WA",
+                    "WV",
+                    "WI",
+                    "WY"
+                ]
+            },
+            "meta": {}
+        },
+        "result": {
+            "element_count": 495,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "partial_unexpected_list": [],
+            "missing_count": 56,
+            "missing_percent": 11.313131313131313,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_counts": [],
+            "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+            "raised_exception": false,
+            "exception_traceback": null,
+            "exception_message": null
+        }
+    },
+    {
+        "success": true,
+        "expectation_config": {
+            "type": "expect_column_to_exist",
+            "kwargs": {
+                "batch_id": "pandas-users_asset",
+                "column": "role"
+            },
+            "meta": {}
+        },
+        "result": {},
+        "meta": {},
+        "exception_info": {
+            "raised_exception": false,
+            "exception_traceback": null,
+            "exception_message": null
+        }
+    },
+    {
+        "success": true,
+        "expectation_config": {
+            "type": "expect_column_values_to_be_in_set",
+            "kwargs": {
+                "batch_id": "pandas-users_asset",
+                "column": "role",
+                "value_set": [
+                    "consumer",
+                    "admin",
+                    "fetch-staff"
+                ]
+            },
+            "meta": {}
+        },
+        "result": {
+            "element_count": 495,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "partial_unexpected_list": [],
+            "missing_count": 0,
+            "missing_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_counts": [],
+            "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+            "raised_exception": false,
+            "exception_traceback": null,
+            "exception_message": null
+        }
+    },
+    {
+        "success": true,
+        "expectation_config": {
+            "type": "expect_column_values_to_be_of_type",
+            "kwargs": {
+                "batch_id": "pandas-users_asset",
+                "column": "active",
+                "type_": "bool"
+            },
+            "meta": {}
+        },
+        "result": {
+            "observed_value": "bool_"
+        },
+        "meta": {},
+        "exception_info": {
+            "raised_exception": false,
+            "exception_traceback": null,
+            "exception_message": null
+        }
+    }
+]
