@@ -1,0 +1,372 @@
+[
+    {
+        "success": true,
+        "expectation_config": {
+            "type": "expect_column_to_exist",
+            "kwargs": {
+                "batch_id": "pandas-brands_asset",
+                "column": "_id"
+            },
+            "meta": {}
+        },
+        "result": {},
+        "meta": {},
+        "exception_info": {
+            "raised_exception": false,
+            "exception_traceback": null,
+            "exception_message": null
+        }
+    },
+    {
+        "success": true,
+        "expectation_config": {
+            "type": "expect_column_values_to_be_unique",
+            "kwargs": {
+                "batch_id": "pandas-brands_asset",
+                "column": "_id"
+            },
+            "meta": {}
+        },
+        "result": {
+            "element_count": 1167,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "partial_unexpected_list": [],
+            "missing_count": 0,
+            "missing_percent": 0.0,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_counts": [],
+            "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+            "raised_exception": false,
+            "exception_traceback": null,
+            "exception_message": null
+        }
+    },
+    {
+        "success": true,
+        "expectation_config": {
+            "type": "expect_column_to_exist",
+            "kwargs": {
+                "batch_id": "pandas-brands_asset",
+                "column": "barcode"
+            },
+            "meta": {}
+        },
+        "result": {},
+        "meta": {},
+        "exception_info": {
+            "raised_exception": false,
+            "exception_traceback": null,
+            "exception_message": null
+        }
+    },
+    {
+        "success": false,
+        "expectation_config": {
+            "type": "expect_column_values_to_be_unique",
+            "kwargs": {
+                "batch_id": "pandas-brands_asset",
+                "column": "barcode"
+            },
+            "meta": {}
+        },
+        "result": {
+            "element_count": 1167,
+            "unexpected_count": 14,
+            "unexpected_percent": 1.1996572407883461,
+            "partial_unexpected_list": [
+                "511111504788",
+                "511111305125",
+                "511111504139",
+                "511111204923",
+                "511111605058",
+                "511111504139",
+                "511111504788",
+                "511111004790",
+                "511111204923",
+                "511111305125",
+                "511111704140",
+                "511111605058",
+                "511111704140",
+                "511111004790"
+            ],
+            "missing_count": 0,
+            "missing_percent": 0.0,
+            "unexpected_percent_total": 1.1996572407883461,
+            "unexpected_percent_nonmissing": 1.1996572407883461,
+            "partial_unexpected_counts": [
+                {
+                    "value": "511111004790",
+                    "count": 2
+                },
+                {
+                    "value": "511111204923",
+                    "count": 2
+                },
+                {
+                    "value": "511111305125",
+                    "count": 2
+                },
+                {
+                    "value": "511111504139",
+                    "count": 2
+                },
+                {
+                    "value": "511111504788",
+                    "count": 2
+                },
+                {
+                    "value": "511111605058",
+                    "count": 2
+                },
+                {
+                    "value": "511111704140",
+                    "count": 2
+                }
+            ],
+            "partial_unexpected_index_list": [
+                9,
+                20,
+                129,
+                152,
+                194,
+                299,
+                412,
+                467,
+                536,
+                651,
+                1002,
+                1012,
+                1015,
+                1071
+            ]
+        },
+        "meta": {},
+        "exception_info": {
+            "raised_exception": false,
+            "exception_traceback": null,
+            "exception_message": null
+        }
+    },
+    {
+        "success": true,
+        "expectation_config": {
+            "type": "expect_column_values_to_not_be_null",
+            "kwargs": {
+                "batch_id": "pandas-brands_asset",
+                "column": "name"
+            },
+            "meta": {}
+        },
+        "result": {
+            "element_count": 1167,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "partial_unexpected_list": [],
+            "partial_unexpected_counts": [],
+            "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+            "raised_exception": false,
+            "exception_traceback": null,
+            "exception_message": null
+        }
+    },
+    {
+        "success": false,
+        "expectation_config": {
+            "type": "expect_column_values_to_not_be_null",
+            "kwargs": {
+                "batch_id": "pandas-brands_asset",
+                "column": "category"
+            },
+            "meta": {}
+        },
+        "result": {
+            "element_count": 1167,
+            "unexpected_count": 155,
+            "unexpected_percent": 13.281919451585262,
+            "partial_unexpected_list": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            "partial_unexpected_counts": [
+                {
+                    "value": null,
+                    "count": 20
+                }
+            ],
+            "partial_unexpected_index_list": [
+                11,
+                23,
+                24,
+                34,
+                43,
+                46,
+                49,
+                55,
+                56,
+                61,
+                77,
+                80,
+                83,
+                95,
+                99,
+                104,
+                113,
+                114,
+                117,
+                118
+            ]
+        },
+        "meta": {},
+        "exception_info": {
+            "raised_exception": false,
+            "exception_traceback": null,
+            "exception_message": null
+        }
+    },
+    {
+        "success": false,
+        "expectation_config": {
+            "type": "expect_column_values_to_not_be_null",
+            "kwargs": {
+                "batch_id": "pandas-brands_asset",
+                "column": "brandCode"
+            },
+            "meta": {}
+        },
+        "result": {
+            "element_count": 1167,
+            "unexpected_count": 234,
+            "unexpected_percent": 20.051413881748072,
+            "partial_unexpected_list": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            "partial_unexpected_counts": [
+                {
+                    "value": null,
+                    "count": 20
+                }
+            ],
+            "partial_unexpected_index_list": [
+                0,
+                11,
+                18,
+                23,
+                24,
+                25,
+                29,
+                31,
+                34,
+                43,
+                46,
+                49,
+                55,
+                56,
+                61,
+                67,
+                74,
+                77,
+                80,
+                83
+            ]
+        },
+        "meta": {},
+        "exception_info": {
+            "raised_exception": false,
+            "exception_traceback": null,
+            "exception_message": null
+        }
+    },
+    {
+        "success": true,
+        "expectation_config": {
+            "type": "expect_column_to_exist",
+            "kwargs": {
+                "batch_id": "pandas-brands_asset",
+                "column": "topBrand"
+            },
+            "meta": {}
+        },
+        "result": {},
+        "meta": {},
+        "exception_info": {
+            "raised_exception": false,
+            "exception_traceback": null,
+            "exception_message": null
+        }
+    },
+    {
+        "success": true,
+        "expectation_config": {
+            "type": "expect_column_values_to_be_of_type",
+            "kwargs": {
+                "batch_id": "pandas-brands_asset",
+                "column": "topBrand",
+                "type_": "bool"
+            },
+            "meta": {}
+        },
+        "result": {
+            "element_count": 1167,
+            "unexpected_count": 0,
+            "unexpected_percent": 0.0,
+            "partial_unexpected_list": [],
+            "missing_count": 612,
+            "missing_percent": 52.44215938303341,
+            "unexpected_percent_total": 0.0,
+            "unexpected_percent_nonmissing": 0.0,
+            "partial_unexpected_counts": [],
+            "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+            "raised_exception": false,
+            "exception_traceback": null,
+            "exception_message": null
+        }
+    }
+]
