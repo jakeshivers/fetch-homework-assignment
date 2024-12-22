@@ -21,6 +21,7 @@ Jake
 * The data appears to contain many duplicate `users`. I would like to know why this is the case. 
 * There are duplicate barcode values in the `brands` file as well. How would we distinguish one `barcode` type from another if they have the same value?
 * Category has missing data for many records. Perhaps this is a product that Fetch does not work with, which would explain that. Same with `barcode`.
+* The ER diagram I created is a bit too normalized for a data warehouse. It answers the data questions, but another step could be taken to create a star schema. This would speed up querying for large data sets. I would use a tool like [`dbt`](https://github.com/jakeshivers/airbnb-dbt) to help build out a reliable model.
 
 ### 2. How did you discover the data quality issues?
 * I knew right away there were issues when I tried loading the data. Once I got the data loaded into my database, I installed `Great Expectations` and had it run analysis on some of the fields. I did not QA the quality in each field, but wanted to showcase my knowledge of `GA`.
