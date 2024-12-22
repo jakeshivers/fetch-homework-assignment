@@ -1,2 +1,2 @@
 # fetch-homework-assignment
-Showcasing my data analytics skills for Fetch Rewards
+Showcasing my data analytics/engineering skills for Fetch Rewards.
